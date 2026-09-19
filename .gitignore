@@ -52,15 +52,6 @@ __pycache__
 # archive
 archive
 
-# admin
-# /pages/admin/listings
-# /pages/api/listings/toCheck.ts
-# /pages/api/listings/setValidity.ts
-
-# elasticsearch
-http_ca.crt
-es pswd.txt
-
 # firebase
 /functions
 .firebaserc
