@@ -1,0 +1,104 @@
+@use 'variables.module.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Nunito, sans-serif;
+  color: variables.$dark-color;
+  background: variables.$light-color;
+}
+
+a {
+  color: variables.$light-link-color;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: variables.$dark-link-color;
+  }
+}
+  
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: variables.$dark-color;
+    background: variables.$light-color;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: variables.$light-color;
+    background: variables.$dark-color;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.32,.2,.7,.82);
+}
+
+.toast {
+  transition: all .4s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toast-hidden {
+  top: -10rem;
+  opacity: 0;
+}
+
+.min-h-s-screen {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.bg-twitter {
+  background-color: #00acee;
+}
+
+.bg-chart {
+  background-image: url('/chart-light.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-chart {
+    background-image: url('/chart-dark.jpg');
+  }
+}

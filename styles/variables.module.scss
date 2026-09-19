@@ -1,0 +1,19 @@
+$primary-color: rgb(59, 145, 174);
+$secondary-color: rgb(152, 196, 206);
+$light-color: white;
+$dark-color: rgb(40, 40, 40);
+$light-dark-color: rgb(58, 58, 58);
+$darker-color: rgb(32, 32, 32);
+$light-link-color: rgb(2, 132, 199);
+$dark-link-color: rgb(56, 189, 248);
+
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  lightColor: $light-color;
+  darkColor: $dark-color;
+  lightDarkColor: $light-dark-color;
+  darkerColor: $darker-color;
+  lightLinkColor: $light-link-color;
+  darkLinkColor: $dark-link-color;
+}

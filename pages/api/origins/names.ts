@@ -1,0 +1,28 @@
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import type { NextApiRequest, NextApiResponse } from 'next'
+import { getOriginsNames } from '../../../api/controllers/origins'
+
+export default async function handler (
+  req: NextApiRequest,
+  res: NextApiResponse<string[]>
+) {
+  try {
+    const origins = await getOriginsNames()
+
+    if (origins) {
+      res.status(200).json(origins)
+
+      return
+    }
+
+    res.status(404).end()
+
+    return
+  } catch (error) {
+    console.error(error)
+
+    res.status(500).end()
+
+    return
+  }
+}
