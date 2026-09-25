@@ -12,11 +12,11 @@ export default function About () {
       <div className="container max-w-lg w-full min-h-s-screen mx-auto p-4 leading-7">
         <h1 className="mt-4 mb-8 text-4xl">About</h1>
         <p>
-          buyfinder&#46;moe searches and compares prices for anime figures that searches for in-stock items on multiple online shops at once.
+          buyfinder&#46;moe searches and compares prices for anime goods on multiple online shops at once.
         </p>
         <br />
         <p>
-          It is also possible to set watches to be notified by email of new listings when other users search for the same figure.
+          It is also possible to set watches to be notified by email of new listings when other users search for the same item.
         </p>
         <br />
         <p>
